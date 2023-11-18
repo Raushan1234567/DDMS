@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DGM</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./feviconr.jpeg" />
+  </head>
+  <body>
+    <div class="nav" >
+      <h1 id="goToHomePage">Dog Data Management System</h1>
+      <p id="logout"></p>
+    </div>
+    <div id="admin__mainCont">
+      
+
+      <div>
+       <div class="header_button">
+        <button id="addProductBtn">Add Dog</button>
+        <button id="deleteAll">Delete All</button>
+       </div>
+        <div id="adminProductFormCont">
+         
+          <form id="adminProductForm" class="details_page_main_container">
+            <div id="adminFormContClose"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15"><path fill="white" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468Z" clip-rule="evenodd"/></svg></div>
+            <div class="details_page_left_container">
+             <div class="details_header">
+              <h1>Dog details</h1>
+             </div>
+             <div class="details_body">
+        
+        
+              <div class="details_body_items">
+                <p>Name</p>
+                <input id="name" required type="text">
+              </div>
+        
+              
+              <div class="details_body_items">
+                <p>Nature</p>
+                <input id="nature" required type="text">
+              </div>
+        
+              <div class="details_body_items">
+                <p>Breed</p>
+                <input  id="breed" required type="text">
+              </div>
+        
+            
+        
+        
+             </div>
+             <div class="submit_button">
+              <button id="postProductBtn">Submit Details</button>
+              <button id="patchProductBtn">Edit</button>
+              <!-- <button style="    background-color: rgb(255, 230, 230);color: red;">cancle</button> -->
+             </div>
+            </div>
+          </form>
+        </div>
+      </div>
+        
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Breed</th>
+            <th>Nature</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="dogs_container">
+         
+        </tbody>
+      </table>
+
+
+      
+    </div>
+  </body>
+  <script src="admin.js"></script>
+</html>
